@@ -4,7 +4,7 @@
 Name: pidgin-groupchat-typing-notifications
 Version: 0
 Release: 1.git%{shortcommit0}%{?dist}
-Summary: Adds typing notifications for group chats in Pidgin 
+Summary: Adds typing notifications for group chats in Pidgin
 
 License: GPLv3+
 URL: https://github.com/EionRobb/%{name}
