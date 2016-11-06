@@ -15,6 +15,8 @@ BuildRequires: pkgconfig(purple)
 BuildRequires: pkgconfig(pidgin)
 BuildRequires: gcc
 
+Requires: pidgin{%_isa}
+
 %description
 Adds typing notifications for multi-user group chats in Pidgin.
 Currently only tested as working with the Hangouts plugin, but
