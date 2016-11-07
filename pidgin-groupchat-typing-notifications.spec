@@ -3,7 +3,7 @@
 
 Name: pidgin-groupchat-typing-notifications
 Version: 0
-Release: 1.git%{shortcommit0}%{?dist}
+Release: 2.git%{shortcommit0}%{?dist}
 Summary: Adds typing notifications for group chats in Pidgin
 
 License: GPLv3+
@@ -15,7 +15,7 @@ BuildRequires: pkgconfig(purple)
 BuildRequires: pkgconfig(pidgin)
 BuildRequires: gcc
 
-Requires: pidgin{%_isa}
+Requires: pidgin%{?_isa}
 
 %description
 Adds typing notifications for multi-user group chats in Pidgin.
@@ -46,5 +46,8 @@ chmod 755 %{buildroot}%{_libdir}/pidgin/grouptyping.so
 %doc README.md
 
 %changelog
+* Mon Nov 07 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 0-2.git33a75f9
+- Small SPEC fixes.
+
 * Sun Nov 06 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 0-1.git33a75f9
 - Initial commit.
