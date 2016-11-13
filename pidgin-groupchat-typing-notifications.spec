@@ -20,7 +20,7 @@ Currently only tested as working with the Hangouts plugin, but
 support for other protocols will come later.
 
 %prep
-%setup -qn %{name}-%{commit0}
+%autosetup
 
 # fix W: wrong-file-end-of-line-encoding
 sed -i -e "s,\r,," README.md
