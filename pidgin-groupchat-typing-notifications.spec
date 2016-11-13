@@ -5,7 +5,6 @@ Summary: Adds typing notifications for group chats in Pidgin
 
 License: GPLv3+
 URL: https://github.com/EionRobb/%{name}
-
 Source0: %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires: pkgconfig(glib-2.0)
