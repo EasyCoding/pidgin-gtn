@@ -43,6 +43,9 @@ chmod 755 %{buildroot}%{_libdir}/pidgin/grouptyping.so
 %doc README.md
 
 %changelog
+* Sun Nov 13 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 2-1
+- Updated to version 2. Use normal releases instead of Git snapshots.
+
 * Mon Nov 07 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 0-2.git33a75f9
 - Small SPEC fixes.
 
