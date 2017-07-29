@@ -1,6 +1,6 @@
 Name: pidgin-groupchat-typing-notifications
 Version: 2
-Release: 1%{?dist}
+Release: 3%{?dist}
 Summary: Adds typing notifications for group chats in Pidgin
 
 License: GPLv3+
@@ -43,6 +43,12 @@ chmod 755 %{buildroot}%{_libdir}/pidgin/grouptyping.so
 %doc README.md
 
 %changelog
+* Thu Jul 27 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
+* Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Sun Nov 13 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 2-1
 - Updated to version 2. Use normal releases instead of Git snapshots.
 
