@@ -1,6 +1,9 @@
+# This is a plugin, so we don't need strict symbol linkage.
+%undefine _strict_symbol_defs_build
+
 Name: pidgin-groupchat-typing-notifications
 Version: 2
-Release: 3%{?dist}
+Release: 5%{?dist}
 Summary: Adds typing notifications for group chats in Pidgin
 
 License: GPLv3+
@@ -43,6 +46,12 @@ chmod 755 %{buildroot}%{_libdir}/pidgin/grouptyping.so
 %doc README.md
 
 %changelog
+* Tue Jan 23 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 2-5
+- Fixed build under Fedora Rawhide.
+
+* Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
+
 * Thu Jul 27 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
 
