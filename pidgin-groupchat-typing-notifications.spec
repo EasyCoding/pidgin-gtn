@@ -1,6 +1,3 @@
-# This is a plugin, so we don't need strict symbol linkage.
-%undefine _strict_symbol_defs_build
-
 Name: pidgin-groupchat-typing-notifications
 Version: 3
 Release: 1%{?dist}
