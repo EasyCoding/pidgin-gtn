@@ -14,6 +14,11 @@ BuildRequires: gcc
 
 Requires: pidgin%{?_isa}
 
+# RHEL8 has no Pidgin package on some architectures.
+%if 0%{?rhel} && 0%{?rhel} == 8
+ExcludeArch: aarch64 s390x
+%endif
+
 %description
 Adds typing notifications for multi-user group chats in Pidgin.
 Currently only tested as working with the Hangouts plugin, but
