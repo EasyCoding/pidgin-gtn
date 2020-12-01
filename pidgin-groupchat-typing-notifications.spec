@@ -11,6 +11,7 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(purple)
 BuildRequires: pkgconfig(pidgin)
 BuildRequires: gcc
+BuildRequires: make
 
 Requires: pidgin%{?_isa}
 
